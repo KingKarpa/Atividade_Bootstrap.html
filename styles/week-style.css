@@ -1,0 +1,18 @@
+body{
+   background-color: var(--lavanda);
+}
+.c-nav__link{
+   max-width: 100%;
+   background-color: var(--snow);
+   transition: background-color, color .3;
+}
+.c-nav__link:hover{
+   background-color: var(--light-violet);
+   color: var(--snow);
+}
+
+@media only screen and (min-width: 1200px) {
+   .c-nav__link{
+      max-width: 25%;
+   }
+}

@@ -1,0 +1,38 @@
+.c-card{
+   box-shadow: 5px 5px 10px 1px var(--black);
+   margin: auto;
+}
+.c-card__img{
+   background-image: url("./img/folder2.svg");
+   background-repeat: no-repeat;
+   background-size:contain;
+   background-position: center;
+   height: 200px;
+}
+.c-card__body{
+   background-color: var(--snow);
+   font-size: 1.1em;
+}
+
+@media only screen and (min-width: 992px) {
+   .c-card{
+      margin: unset;
+   }
+   .c-card .c-card__img{
+      transition: background-image .3s;
+   }
+   .c-card:hover .c-card__img{
+      background-image: url("./img/folder2-open.svg");
+   }
+
+   .u-grow{
+      transition: all .3s ease-in-out;
+   }
+   .u-grow:hover{
+      transform: scale(1.025);
+   }
+   .u-grow:hover .u-emphasis{
+      font-weight: 700;
+   }
+}
+
